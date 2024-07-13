@@ -1,4 +1,4 @@
-# Ecommerce
+# Ecommerce API
 The Ecommerce API is a RESTful API built with Node.js and Express.js, designed to power the backend functionality of your online store. It provides a comprehensive set of endpoints for managing products, orders, customers, payments, and other essential aspects of your ecommerce platform.
 
 ## Features
