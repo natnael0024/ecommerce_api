@@ -13,7 +13,7 @@ router.post("/create",verifyToken, async (req,res)=>{
         res.status(500).json(err)
     }
 })
- 
+
 //update
 router.put("/update/:id",verifyTokenAndAdmin, async(req,res)=>{
     try{

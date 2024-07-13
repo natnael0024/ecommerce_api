@@ -10,7 +10,7 @@ router.put("/update/:id",verifyTokenAndAutherization, async(req,res)=>{
     req.body.password = CryptoJS.AES.encrypt(req.body.password, process.env.PASS_DEC).toString()
     try{
     const updatedUser = await User.findByIdAndUpdate(req.params.id,{
-        $set: req.body
+        $set: req.body    
     },
     {new:true})
     res.status(200).json(updatedUser)
